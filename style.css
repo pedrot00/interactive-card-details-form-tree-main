@@ -1,0 +1,331 @@
+body{
+    overflow: hidden;
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
+
+
+#leftBox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 415px;
+    height: 100%;
+    background: url('images/bg-main-desktop.png') no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#cartaoFrente{
+    position: relative;
+    width: 448px;
+    height: 245px;
+    background: url('images/bg-card-front.png');
+    background-size: cover;
+    top: 100px;
+    left: 110px;
+    transform: scale(0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9); 
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+#cartaoCostas{
+    position: relative;
+    width: 448px;
+    height: 245px;
+    background: url('images/bg-card-back.png');
+    background-size: cover;
+    top: 100px;
+    left: 210px;
+    transform: scale(0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#cardLogo{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+#cartaoFrenteNumero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 10px;
+    width: 418px;
+    top: 90px;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    font-family: square;
+    letter-spacing: 6px;
+    border: 0;
+}
+
+#cartaoFrenteNome{
+    display: none;
+    position: relative;
+    display: flex;
+    left: 55px;
+    width: 418px;
+    top: 120px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-family: square;
+    letter-spacing: 3px;
+    border: 0;
+}
+
+#cartaoFrenteMes{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 30%;
+    width: 418px;
+    top: 100px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    border: 0;
+}
+
+#cartaoFrenteAno{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 36%;
+    width: 418px;
+    top: 81px;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    border: 0;
+}
+
+#cartaoCostasNumero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 37%;
+    width: 418px;
+    top: 107px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    border: 0;
+}
+
+#cardNome{
+    display: flex;
+    position: relative;
+    left: 740px;
+    bottom: 320px;
+    font-size: 14px;
+    font-family: square;
+    border: 0;
+    font-weight: bold;
+    color: #220930;
+    letter-spacing: 1px;
+}
+#cardNomeBox {
+
+    position: relative;
+    width: 400px;
+    height: 40px;
+    left: 940px;
+    bottom: 310px;
+    transform: translateX(-50%);
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: square;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #392D41;
+    margin: 0;
+    top: 60%;
+    cursor: pointer;
+   
+}
+#cardNum{
+    display: flex;
+    position: relative;
+    left: 740px;
+    bottom: 280px;
+    font-size: 14px;
+    font-family: square;
+    border: 0;
+    font-weight: bold;
+    color: #220930;
+    letter-spacing: 1px;
+}
+#cardNumBox {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    left: 940px;
+    bottom: 270px;
+    transform: translateX(-50%);
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: square;
+    font-size: 16px;
+    color: #392D41;
+    margin: 0;
+    cursor: pointer;
+   
+}
+#mesBox:focus,
+#anoBox:focus,
+#cardNumBox:focus,
+#cardNomeBox:focus,
+#cvcBox:focus{
+    outline: none;
+    border: 2px solid purple
+}
+
+
+#date{
+    display: flex;
+    position: relative;
+    left: 740px;
+    bottom: 240px;
+    font-size: 14px;
+    font-family: square;
+    border: 0;
+    font-weight: bold;
+    color: #220930;
+    letter-spacing: 1px;
+}
+
+#mesBox,
+#anoBox,
+#cvcBox{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    left: 780px;
+    bottom: 230px;
+    transform: translateX(-50%);
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: square;
+    font-size: 16px;
+    color: #392D41;
+    margin: 0;
+    
+}
+
+#cvcLabel{
+    display: flex;
+    position: relative;
+    left: 980px;
+    bottom: 296px;
+    font-size: 14px;
+    font-family: square;
+    border: 0;
+    font-weight: bold;
+    color: #220930;
+    letter-spacing: 1px;
+}
+#cvcBox{
+    position: relative;
+    bottom: 300px;
+    left: 1035px;
+    width: 120px;
+    font-family: square;
+}
+
+#confirmButton{
+    position: relative;
+    background-color: #220930;
+    width: 400px;
+    height: 50px;
+    bottom: 210px;
+    left: 610px;
+    color: white;
+    font-family: square;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.7s ease all;
+}
+
+
+#confirmButton:hover{
+    transition: 0.7s;
+    color: black;
+    background: white;
+    transform: translateY(-3px);
+}
+
+::placeholder {
+    color: gray;
+}
+
+#bodyConfirmPage{
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Confirm{
+   position: fixed;
+   top: 20%;
+}
+
+#logoConfirm{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 30%;
+}
+
+#titleConfirm{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 25px;
+    font-family: square;
+    border: 0;
+    font-weight: bold;
+    color: #220930;
+    letter-spacing: 2px;
+}
+
+#labelConfirm{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: square;
+    border: 0;
+    font-weight: bold;
+    color: #979598;
+    letter-spacing: 1px;
+
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <container id="cont2"> <!-- CONTAINER LEFT -->
+      <div id="leftBox"></div>
+      <div id="cartaoFrente">
+        <img id="cardLogo" src="images/card-logo.svg" alt="">
+        <div id="cartaoFrenteNumero">0000 0000 0000 0000</div>
+        <div id="cartaoFrenteNome">JANE APLESEED</div>
+        <div id="cartaoFrenteMes">00/</div>
+        <div id="cartaoFrenteAno">00</div>
+      </div>
+      <div id="cartaoCostas">
+        <div id="cartaoCostasNumero">001</div>
+      </div>
+    </container>
+
+    <container id="cont2"> <!-- CONTAINER RIGHT -->
+      <div id="cardNome"> CARDHOLDER NAME</div>
+      <input type="text" id="cardNomeBox" maxlength="19" placeholder=" e.g Jane Apleseed" oninput="atualizarDiv(this.id)">
+      <div id="cardNum">CARD NUMBER</div>
+      <input type="text" id="cardNumBox" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" oninput="atualizarDiv(this.id)">
+      <div id="date">EXP. DATE [MM/YY]</div>
+      <input type="text" id="mesBox" maxlength="2" placeholder="MM" oninput="atualizarDiv(this.id)">
+      <input type="text" id="anoBox" maxlength="2" placeholder="YY" oninput="atualizarDiv(this.id)">
+      <div id="cvcLabel">CVC</div>
+      <input type="text" id="cvcBox" maxlength="3" placeholder=" e.g. 123" oninput="atualizarDiv(this.id)" >
+      <input type="button" value="Confirm" id="confirmButton">
+    </container>
+  
+    
+  
+ <script src="script.js"></script>
+</body>
+</html>
